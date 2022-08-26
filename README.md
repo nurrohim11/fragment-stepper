@@ -12,7 +12,7 @@ and in the app or module build.gradle:
 
 ```gradle
 dependencies {
-    
+    implementation 'com.github.nurrohim11:fragment-stepper:latest-version'
 }
 ```
 

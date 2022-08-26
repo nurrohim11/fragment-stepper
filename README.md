@@ -30,7 +30,6 @@ dependencies {
 #### Step 2: let your activity inherit from `StepsManager` and implements methods
 ```kotlin
 class MainActivity : AppCompatActivity(), StepsManager{
-    ...
     
     override fun getCount(): Int {
             return 3

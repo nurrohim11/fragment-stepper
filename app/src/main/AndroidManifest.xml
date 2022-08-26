@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.rygelouv.fragmentstepperproject">
+    package="com.rohimdev.stepper">
 
     <application
         android:allowBackup="true"
@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.rohimdev.stepper.MainActivity">
 
         </activity>
-        <activity android:name=".MainJavaActivity">
+        <activity android:name="com.rohimdev.stepper.MainJavaActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,7 +21,7 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".testcustomviews.TestCustomViewActivity">
+        <activity android:name="com.rohimdev.stepper.testcustomviews.TestCustomViewActivity">
 
         </activity>
     </application>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.rygelouv.fragmentstepperproject.MainActivity">
+    tools:context="com.rohimdev.stepper.MainActivity">
 
     <ProgressBar
         android:id="@+id/progress_bar"
@@ -16,7 +16,7 @@
         android:max="3"
         />
 
-    <com.rygelouv.fragmentstepper.FragmentStepper
+    <com.rohimdev.fragmentstepper.FragmentStepper
         android:layout_weight="1"
         android:id="@+id/stepper"
         android:layout_width="match_parent"

@@ -1,15 +1,3 @@
-# Introduction
-
-FragmentStepper is a library that aims to make the process of creating steps screen (wizards) based 
-on fragments more easy. The library handles internally:
-- Fragments state by using FragmentStatePagerAdapter so your fragment are restored even 
-when you navigate back and forth with a good memory management 
-- Animations for the transition between steps
-- Back and forth Navigation so you won't having to face the deadly deal of back stack management. 
-Even Jake Wharton argues against the fragment back stack: [https://youtu.be/arch-talk](https://youtu.be/nP_B5-jrbsY?t=2494)
-
-<img src="https://github.com/Rygelouv/FragmentStepper/blob/master/videotogif_2018.04.09_10.32.45.gif" width="250"> 
-
 ## Add it to your project
 
 In your project root build.gradle with:
@@ -24,7 +12,7 @@ and in the app or module build.gradle:
 
 ```gradle
 dependencies {
-    implementation 'com.github.Rygelouv:FragmentStepper:v0.0.3'
+    
 }
 ```
 
@@ -34,9 +22,9 @@ dependencies {
 ```xml
 <com.rygelouv.fragmentstepper.FragmentStepper
         android:layout_weight="1"
-        android:id="@+id/stepper"
+        android:id="@+id/fs_stepper"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
         />
 ```
 #### Step 2: let your activity inherit from `StepsManager` and implements methods
@@ -79,32 +67,6 @@ override fun onBackPressed() {
 #### Step 5: there is no step 5. That's it you're all set
 
 ## TODO
-- Handle animations for transition 
-- Improve the way of handling backstack 
+- Handle animations for transition
+- Improve the way of handling backstack
 - Profile for memory management
-
-## How it's done ?
-FragmentStepper library is based on ViewPager but with some customization an adaptation to make fit for the 
-specific need of steps/wizards flows. 
-
-## Credits
-
-Author: Rygel Louv [https://medium.com/@rygel](https://medium.com/@rygel)
-
-
-License
---------
-
-    Copyright 2017 Rygelouv.
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.

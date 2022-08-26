@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
-group='com.github.rygelouv'
+group='com.github.rohimdev'
 
 android {
     compileSdkVersion 32

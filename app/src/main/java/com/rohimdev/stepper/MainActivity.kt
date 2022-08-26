@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity(), OnFragmentInteractionListener, StepsMa
         return when(position){
             0 -> FirstFragment()
             1 -> SecondFragment()
-            2 -> ThirdFragment.newInstance("Boom", "Baam")
+            2 -> ThirdFragment.newInstance("Test", "Masuk")
             else -> FirstFragment()
         }
     }

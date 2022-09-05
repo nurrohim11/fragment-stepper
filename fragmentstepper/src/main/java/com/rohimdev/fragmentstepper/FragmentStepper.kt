@@ -1,39 +1,13 @@
 package com.rohimdev.fragmentstepper
 
 import android.content.Context
-import androidx.viewpager.widget.ViewPager
-import androidx.appcompat.app.AppCompatActivity
 import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.animation.DecelerateInterpolator
 import android.widget.Scroller
+import androidx.appcompat.app.AppCompatActivity
+import androidx.viewpager.widget.ViewPager
 
-
-/**
- * Created by rygelouv on 4/6/18.
- * <p>
- * FragmentStepperProject
- *
- * This method JUST determines whether we want to intercept the motion.
- * If we return true, onMotionEvent will be called and we do the actual
- * scrolling there.
- *
- * Found here : https://stackoverflow.com/questions/9650265/how-do-disable-paging-by-swiping-with-finger-in-viewpager-but-still-be-able-to-s
- *
- *  Copyright 2017 Rygelouv.
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
- */
 class FragmentStepper: ViewPager {
 
     lateinit var pagerAdapter: StepperFragmentPagerAdapter

@@ -1,1 +1,2 @@
-include ':app', ':fragmentstepper'
+include ':app'
+include ':fragmentstepper'
